@@ -217,6 +217,10 @@ def main():
             if choice < 0 or choice >= len(cameras):
                 print("Invalid index. Using default 0.")
                 choice = 0
+        except (EOFError, RuntimeError):
+            # This happens when running as a windowed application (no console)
+            choice = 0
+            print(f"No console input available. Defaulting to: {cameras[choice]}")
         except ValueError:
             print("Invalid input. Using default 0.")
             choice = 0
