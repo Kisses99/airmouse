@@ -1,8 +1,25 @@
 [project]
 name = "airmouse"
 version = "0.1.0"
-description = "Add your description here"
+description = "A high-performance webcam-based Air Mouse using Python, MediaPipe, and OpenCV."
 readme = "README.md"
+authors = [
+    { name = "Kai Tao", email = "kilotao@gmail.com" }
+]
+license = { file = "LICENSE" }
+keywords = ["airmouse", "gesture-control", "mediapipe", "computer-vision", "mouse-control"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Utilities",
+]
 requires-python = ">=3.10"
 dependencies = [
     "mediapipe==0.10.11",
@@ -13,6 +30,11 @@ dependencies = [
     "pygrabber>=0.2",
     "pyopengl>=3.1.10",
 ]
+
+[project.urls]
+Homepage = "https://github.com/Kisses99/airmouse"
+Repository = "https://github.com/Kisses99/airmouse"
+Issues = "https://github.com/Kisses99/airmouse/issues"
 
 [project.scripts]
 airmouse = "airmouse.main:main"
