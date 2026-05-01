@@ -11,6 +11,9 @@ A high-performance "Air Mouse" using Python, MediaPipe, and OpenCV. Control your
 
 ## Installation
 
+### Windows Standalone (No Python Required)
+For users who don't want to install Python, you can download the standalone `airmouse.exe` from the [Latest Releases](https://github.com/Kisses99/airmouse/releases/latest).
+
 ### Using pip
 ```bash
 pip install airmouse
