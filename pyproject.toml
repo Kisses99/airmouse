@@ -1,0 +1,25 @@
+[project]
+name = "airmouse"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mediapipe==0.10.11",
+    "numpy<2.0",
+    "opencv-python<4.13",
+    "pyautogui>=0.9.54",
+    "pygame>=2.6.1",
+    "pygrabber>=0.2",
+    "pyopengl>=3.1.10",
+]
+
+[project.scripts]
+airmouse = "airmouse.main:main"
+
+[tool.uv]
+package = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
